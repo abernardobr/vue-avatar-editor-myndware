@@ -224,7 +224,9 @@ export default {
         },
         onDragStart (e) {
             e = e || window.event;
-            e.preventDefault();
+            if (e.type !== 'touchstart') {
+                e.preventDefault();
+            }
             this.state.drag = true;
             this.state.mx = null;
             this.state.my = null;
