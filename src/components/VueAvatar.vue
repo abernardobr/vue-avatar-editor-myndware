@@ -319,9 +319,9 @@ export default {
             imageObj.onerror = (err) => console.log('error loading image: ', err);
 
             // imageObj.onerror = this.props.onLoadFailure
-            if (!this.isDataURL(imageURL)) {
-                imageObj.crossOrigin = 'anonymous';
-            }
+            //if (!this.isDataURL(imageURL)) {
+            //    imageObj.crossOrigin = 'anonymous';
+            //}
 
             imageObj.src = imageURL;
         },
